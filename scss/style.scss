@@ -18,15 +18,39 @@ html, body, p , ul{
   }
   ul {
     list-style: none;
+    margin-left: $space*2;
 
     li {
-        margin: 0;
+        margin: 1;
         display: inline;
+        &:nth-child(1) a:hover {
+            background: #BADA55;
+        }
+        &:nth-child(2) a:hover {
+            background: #B000B5;
+        }
+        &:nth-child(3) a:hover {
+            background: #D1E5E1;
+        }
+        &:nth-child(4) a:hover {
+            background: #6A6;
+        }
+        &:nth-child(5) a:hover {
+            background: #600613;
+        }
+        &:nth-child(6) a:hover {
+            background: #0D355A;
+        }
         a {
             text-decoration: none;
             color: $secondary-color;
             background: $primary-color;
             padding: $space/4 $space/2;
+            transition: all 0.5s linear;
+              
+                
+
+            
         }
     }
 }
@@ -35,12 +59,42 @@ article {
     background: grayscale($primary-color);
     color: $secondary-color;
     padding: $space/2;
+  
+    &::first-letter{
+        font-size: 150%;
+    }
+    &:first-child{
+        background-color: white;
+    }
+    &:last-child{
+        background-color: white;
+    }
+    &:nth-child(4n+2){
+        grid-column: span 3;
+        color: $primary-color;
+    }
+    &:nth-child(4n+3){
+        grid-column: span 3;
+        color: $primary-color;
+        
+    } 
+    
+}
+blockquote {
+    &:before{
+        content: "\"";
+    }
+    &:after{
+        content: "\"";
+    }
 }
 main {
     width: $width*.9;
     margin: 0 auto;
-    background: lighten($secondary-color, 10%);
+    background: $primary-color;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: $space/2;
+    
+   
   }

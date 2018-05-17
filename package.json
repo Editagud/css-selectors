@@ -1,0 +1,20 @@
+{
+  "name": "css-selectors",
+  "version": "1.0.0",
+  "description": "## fork and clone this repository The html file contains the structure, the scss file a basic layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "my-sass": "node-sass -w scss/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Editagud/css-selectors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Editagud/css-selectors/issues"
+  },
+  "homepage": "https://github.com/Editagud/css-selectors#readme"
+}
